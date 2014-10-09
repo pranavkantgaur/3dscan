@@ -1,0 +1,2 @@
+gvfs-mount -s gphoto2
+gphoto2 --capture-image-and-download

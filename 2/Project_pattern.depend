@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1328527529 source:/home/pranav/Desktop/Project_pattern/project_pattern.cpp
+	"/home/pranav/Desktop/PROJECT_GLOBAL/global_cv.h"
+
+1328527172 /home/pranav/Desktop/PROJECT_GLOBAL/global_cv.h
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdio.h>
+

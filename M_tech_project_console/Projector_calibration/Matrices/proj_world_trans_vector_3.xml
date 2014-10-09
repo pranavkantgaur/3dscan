@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_world_trans_vector_3 type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    -8.2196141342181556e+02 -5.0018500118046160e+02
+    3.8460416005460552e+03</data></proj_world_trans_vector_3>
+</opencv_storage>

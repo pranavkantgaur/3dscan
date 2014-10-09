@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1323243047 source:/home/pranav/Desktop/Phase_wrapping/wrapped_phase.cpp
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdio.h>
+
+1327404886 source:/home/pranav/Desktop/2/wrapped_phase.cpp
+	"/home/pranav/Desktop/PROJECT_GLOBAL/phase_wrapping.h"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdio.h>
+
+1326449704 /home/pranav/Desktop/PROJECT_GLOBAL/phase_wrapping.h
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1326431872 source:/home/pranav/Desktop/6/triangulation.cpp
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdio.h>
+	<math.h>
+

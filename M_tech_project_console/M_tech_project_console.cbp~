@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="M_tech_project_console" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/M_tech_project_console" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/M_tech_project_console" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="/usr/local/lib/libopencv_imgproc.so.2.4" />
+					<Add library="/usr/local/lib/libopencv_highgui.so.2.4" />
+					<Add library="/usr/local/lib/libopencv_core.so.2.4" />
+					<Add library="/usr/local/lib/libopencv_calib3d.so.2.4" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../1/pattern_generator.cpp" />
+		<Unit filename="../2/project_pattern.cpp" />
+		<Unit filename="../3/wrapped_phase.cpp" />
+		<Unit filename="../4/phase_unwrap.cpp" />
+		<Unit filename="../5/compute_correspondance.cpp" />
+		<Unit filename="../6/system_calibration.cpp" />
+		<Unit filename="../7/triangulation.cpp" />
+		<Unit filename="m_tech_project_console.cpp" />
+		<Unit filename="../PROJECT_GLOBAL/common_variables.h" />
+		<Unit filename="../PROJECT_GLOBAL/global_cv.h" />
+		<Unit filename="../PROJECT_GLOBAL/intermodule_dependencies.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

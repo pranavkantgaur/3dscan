@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="M_tech_project_console" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/M_tech_project_console" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/usr/include/eigen3" />
+					<Add directory="/usr/include/vtk-5.8" />
+					<Add directory="/usr/local/include/pcl-1.6" />
+					<Add directory="/home/pranav/Desktop/PROJECT_GLOBAL" />
+				</Compiler>
+				<Linker>
+					<Add library="/usr/lib/libvtkCommon.so" />
+					<Add library="/usr/lib/libvtkRendering.so" />
+					<Add library="/usr/local/lib/libopencv_calib3d.so" />
+					<Add library="/usr/local/lib/libopencv_core.so" />
+					<Add library="/usr/local/lib/libopencv_highgui.so" />
+					<Add library="/usr/local/lib/libopencv_imgproc.so" />
+					<Add library="/usr/local/lib/libpcl_io.so.1.6" />
+					<Add library="/usr/local/lib/libpcl_filters.so.1.6" />
+					<Add library="/usr/lib/libvtkGraphics.so" />
+					<Add library="/usr/lib/libvtkFiltering.so" />
+					<Add library="/usr/local/lib/libpcl_visualization.so.1.6" />
+					<Add library="/usr/local/lib/libpcl_common.so.1.6" />
+					<Add library="/usr/local/lib/libgphoto2.so" />
+					<Add library="/usr/local/lib/libgphoto2_port.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libjpeg.so" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/M_tech_project_console" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/usr/include/pcl-1.5" />
+					<Add directory="/usr/include/eigen3" />
+					<Add directory="/usr/include/vtk-5.8" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="/usr/local/lib/libopencv_imgproc.so.2.4.0" />
+					<Add library="/usr/local/lib/libopencv_highgui.so.2.4.0" />
+					<Add library="/usr/local/lib/libopencv_core.so.2.4.0" />
+					<Add library="/usr/local/lib/libopencv_calib3d.so.2.4.0" />
+					<Add library="/usr/lib/libpcl_visualization.so" />
+					<Add library="/usr/lib/libpcl_io.so" />
+					<Add library="/usr/lib/libpcl_common.so" />
+					<Add library="/usr/lib/libvtkCommon.so" />
+					<Add library="/usr/lib/libvtkRendering.so" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../1/pattern_generator.cpp" />
+		<Unit filename="../2/project_pattern.cpp" />
+		<Unit filename="../3/wrapped_phase.cpp" />
+		<Unit filename="../4/phase_unwrap.cpp" />
+		<Unit filename="../5/compute_correspondance.cpp" />
+		<Unit filename="../6/system_calibration.cpp" />
+		<Unit filename="../7/triangulation.cpp" />
+		<Unit filename="../8/save_point_cloud.cpp" />
+		<Unit filename="../8/visualize_point_cloud.cpp" />
+		<Unit filename="../9/register_point_clouds.cpp" />
+		<Unit filename="m_tech_project_console.cpp" />
+		<Unit filename="v4l2_access.cpp" />
+		<Unit filename="../PROJECT_GLOBAL/common_variables.h" />
+		<Unit filename="../PROJECT_GLOBAL/global_cv.h" />
+		<Unit filename="../PROJECT_GLOBAL/intermodule_dependencies.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

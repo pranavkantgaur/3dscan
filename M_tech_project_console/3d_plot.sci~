@@ -1,0 +1,66 @@
+//Following function will plot 3d for visualizing system calibration parameters.
+
+
+
+function sci_plot_3d(phy_checkerboard_X,phy_checkerboard_Y,virt_checkerboard_X,virt_checkerboard_Y)
+
+//Lets read the files for:world-coordinate system,camera-coordinate system,Projector-coordinate system,Physical checkerboard coordinates,Vitual checkeboard coordinates.
+world_filename="";
+camera_filename="";
+projector_filename="";
+physical_checkerboard_filename="";
+virtual_checkerboard_filename="";
+
+fd_world=mopen(world_filename,"r");
+fd_camera=mopen(camera_filename,"r");
+fd_projector=mopen(projector_filename,"r");
+fd_physical_checkerboard=mopen(physical_checkerboard,"r");
+fd_virtual_checkerboard=mopen(virtual_checkerboard,"r");
+
+
+
+//Lets initialize the coordinate-system arrays...
+for i=1:4
+X_world(i)=mfscanf("%lf",fd_world);
+Y_world(i)=mfscanf("%lf",fd_world);
+Z_world(i)=mscanf("%lf",fd_world);
+
+X_cam(i)=mfscanf("%lf",fd_camera);
+Y_cam(i)=mfscanf("%lf",fd_camera);
+Z_cam(i)=mfscanf("%lf",fd_camera);
+
+X_proj=mfscanf("%lf",fd_projector);
+Y_proj=mfscanf("%lf",fd_projector);
+Z_proj=mfscanf("%lf",fd_projector);
+end
+
+//Initializing Physical checkerboard array...
+for i=1:phy_checkerboard_X*Phy_chekerboard_Y
+X_phy(i)=mfscanf("%lf",fd_physical_chekerboard);
+Y_phy(i)=mfscanf("%lf",fd_physical_chekerboard);
+Z_phy(i)=mfscanf("%lf",fd_physical_chekerboard);
+end
+
+
+//Initializing Virtual checkerboard array...
+for i=1:virt_checkerboard_X*virt_checkerboard_Y
+X_virt(i)=mfscanf("%lf",fd_virtual_checkerboard);
+Y_virt(i)=mfscanf("%lf",fd_virtual_checkerboard);
+Z_virt(i)=mfscanf("%lf",fd_virtual_checkerboard);
+end
+
+
+
+//Note:1st point of each of coordinate system array is assumed to be its origin.
+//Lets plot the coordinate systems...
+plot3d(X_world,Y_world,Z_world);
+hold on;
+plot3d(X_cam,Y_cam,Z_cam);
+hold on;
+plot3d(X_proj,Y_proj,Z_proj);
+hold on;
+plot3d(X_phy,Y_phy,Z_phy);//Plotting Physial checkerboard(wrt. camera coordinate system)
+hold on;
+plot3d(X_virt,Y_virt,Z_virt);//Plotting virtual chekcerboard(ditto.)
+
+endfunction

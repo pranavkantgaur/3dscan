@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_cam_rot_mat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    7.5953165543214995e-01 -2.8043444147749595e-02
+    -6.4986554735331969e-01 2.3834996793521190e-02
+    9.9959915459976822e-01 -1.5278188743486489e-02
+    6.5003350477060073e-01 -3.8852752490411389e-03
+    7.5989561606308043e-01</data></proj_cam_rot_mat>
+</opencv_storage>

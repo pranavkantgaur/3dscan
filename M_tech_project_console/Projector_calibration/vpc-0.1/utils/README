@@ -1,0 +1,33 @@
+*get_homog: This utility is for computing homographies
+			from  projected chessboards. The arguments are:
+			
+			bash> get_homog --geometry <geometry> img0 img1...
+
+			**geometry is a string in the following format:
+			 COLSxROWS+COL_0xROW_0+FEAT_WIDTHxFEAT_HEIGHT
+			 
+			 where, COLS and ROWS are the number of cols and rows
+			 of the chessboard, COL_0 and ROW_0 refers to the coord
+			 (in pixels) of the origin of the board and FEAT_WIDTH and
+			 FEAT_HEIGHT indicates the dimensions (in pixels) of the
+			 features. ex:
+			 	get_homog --geometry 10x8+40x40+40x40
+
+			 Specifies a board of 10 cols and 8 rows. The origin of the
+			 board is aat 40x40 pixels and each square is 40x40 pixel.
+
+			**The images are specified one after another. For each image
+			  img_i.jpg (all format handled by opencv are supported), 
+			  the utility will produce a img_i.yml that contains the 
+			  computed homography, the image points, the projector points
+			  and the reprojection error.
+
+
+		   **Specifying the features: For each image, the user must click
+		     on the 4 corners that define the grid, starting from the upper
+			 left corner and going clockwise.
+
+*camera_calib: This program takes as input homographies in *.yml format and
+ 			   computes the intrinsic parameters of the corresponding camera.
+			   Results are written in Kcam.yml
+

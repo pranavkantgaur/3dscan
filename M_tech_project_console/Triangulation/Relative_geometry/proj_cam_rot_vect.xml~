@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_cam_rot_vect type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data> -0.075928 0.474076 0.024462
+   </data></proj_cam_rot_vect>
+</opencv_storage>

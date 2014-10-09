@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_distortion_vect type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+      -7.6779014289637973e-02 2.0611338389976095e+00
+       -7.6738400544746612e-00 -9.1947150170923805e-03 0.</data></proj_distortion_vect>
+</opencv_storage>

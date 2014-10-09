@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<world_to_proj_trans_vect_2 type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    .Nan .Nan .Nan</data></world_to_proj_trans_vect_2>
+</opencv_storage>

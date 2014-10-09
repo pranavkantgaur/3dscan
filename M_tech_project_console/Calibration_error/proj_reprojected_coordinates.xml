@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_reprojected_coordinates type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    -6.2822797658974956e+00 1.0309863365810049e+03
+    -8.5061235126297454e+00 1.0406638706155140e+03
+    2.5397827864660703e+00 -3.2279370729070411e+00
+    7.7507492494206235e+02 7.7159833608115002e+02 1. 1. 1. 1.</data></proj_reprojected_coordinates>
+</opencv_storage>

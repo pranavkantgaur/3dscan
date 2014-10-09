@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Projector_dist_vect type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -1.1631430075669760e+00 2.6010567923842189e+00 0. 0. 0.</data></Projector_dist_vect>
+</opencv_storage>

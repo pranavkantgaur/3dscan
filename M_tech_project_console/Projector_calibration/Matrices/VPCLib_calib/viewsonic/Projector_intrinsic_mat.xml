@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Projector_intrinsic_mat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    738.5745327836476 0.0 491.0879711266608
+  0. 743.3519283809202 857.9506814895144
+  0. 0. 1.</data></Projector_intrinsic_mat>
+</opencv_storage>

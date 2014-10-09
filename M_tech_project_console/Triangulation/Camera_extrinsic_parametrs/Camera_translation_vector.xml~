@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Camera_translation_vector type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -4.1026862388364498e+02 -4.1016123799949344e+02
+    1.5380533799446216e+03</data></Camera_translation_vector>
+</opencv_storage>

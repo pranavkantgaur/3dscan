@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<world_to_cam_rot_vect type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -1.9872445941139634e-02 -2.8645491955945396e-01
+    3.7660682557493731e-03</data></world_to_cam_rot_vect>
+</opencv_storage>

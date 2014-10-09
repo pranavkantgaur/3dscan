@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>6 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>17-02-2012 at 18:17.03</u><br />
+Build ended on: <u>17-02-2012 at 18:17.04</u><p />
+<b>-------------- Build: Debug in 6 ---------------</b><br />
+Compiling: triangulation.cpp<br />
+Linking console executable: bin/Debug/6<br />
+/usr/lib/gcc/i686-linux-gnu/4.4.5/../../../../lib/crt1.o: In function `_start':<br />
+<font color="#ff0000">(.text+0x18): undefined reference to `main'</font><br />
+obj/Debug/triangulation.o: In function `read_extrinsics()':<br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:128: undefined reference to `tagname'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:129: undefined reference to `tagname'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:131: undefined reference to `tagname'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:132: undefined reference to `tagname'</font><br />
+obj/Debug/triangulation.o: In function `read_intrinsic_distortion()':<br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:157: undefined reference to `cam_intrinsic_mat'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:158: undefined reference to `cam_dist_vect'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:161: undefined reference to `proj_intrinsic_mat'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:162: undefined reference to `proj_dist_vect'</font><br />
+obj/Debug/triangulation.o: In function `assign_3d_coordinates()':<br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:311: undefined reference to `cam_dist_vect'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:311: undefined reference to `cam_intrinsic_mat'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:347: undefined reference to `proj_dist_vect'</font><br />
+<font color="#ff0000">/home/pranav/Desktop/7/triangulation.cpp:347: undefined reference to `proj_intrinsic_mat'</font><br />
+collect2: ld returned 1 exit status<br />
+<font color="#a00000">Process terminated with status 1 (0 minutes, 1 seconds)</font><br />
+<font color="#a00000">13 errors, 0 warnings</font><br />
+</tt>
+</body>
+</html>

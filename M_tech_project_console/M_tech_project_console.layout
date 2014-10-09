@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../1/pattern_generator.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="18374" topLine="478" />
+	</File>
+	<File name="../2/project_pattern.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="14621" topLine="410" />
+	</File>
+	<File name="../3/wrapped_phase.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="10135" topLine="244" />
+	</File>
+	<File name="../4/phase_unwrap.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="349" topLine="0" />
+	</File>
+	<File name="../5/compute_correspondance.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="19790" topLine="628" />
+	</File>
+	<File name="../6/system_calibration.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="11899" topLine="325" />
+	</File>
+	<File name="../7/triangulation.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="49536" topLine="1447" />
+	</File>
+	<File name="../8/save_point_cloud.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="1449" topLine="41" />
+	</File>
+	<File name="../8/visualize_point_cloud.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1723" topLine="69" />
+	</File>
+	<File name="../9/register_point_clouds.cpp" open="1" top="1" tabpos="15">
+		<Cursor position="2203" topLine="81" />
+	</File>
+	<File name="m_tech_project_console.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="8097" topLine="265" />
+	</File>
+	<File name="v4l2_access.cpp" open="1" top="0" tabpos="14">
+		<Cursor position="4766" topLine="159" />
+	</File>
+	<File name="../PROJECT_GLOBAL/common_variables.h" open="1" top="0" tabpos="3">
+		<Cursor position="251" topLine="0" />
+	</File>
+	<File name="../PROJECT_GLOBAL/global_cv.h" open="1" top="0" tabpos="2">
+		<Cursor position="516" topLine="0" />
+	</File>
+	<File name="../PROJECT_GLOBAL/intermodule_dependencies.h" open="1" top="0" tabpos="1">
+		<Cursor position="615" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

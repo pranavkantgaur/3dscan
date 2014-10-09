@@ -1,0 +1,86 @@
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <iterator>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+
+#include "cv.h"
+#include "highgui.h"
+
+#include "vpc.h"
+
+using namespace std;
+using namespace cv;
+
+
+
+void mat2vec( vector< vector<Point3d> > &v , Mat &m ){
+
+	vector<Point3d> tmp;
+
+	for(int i=0;i<m.rows;i++){
+		tmp.push_back( Point3d( m.at<double>(i,0) , m.at<double>(i,1) , 1.0) );
+	}
+
+	v.push_back( tmp );
+}
+
+void read_data( vector< vector<Point3d> > &cam , vector< vector<Point3d> > &proj , char *path){
+
+	FileStorage fs( path , FileStorage::READ );
+	Mat m_tmp; 
+
+	fs["CAM_PTS"] >>m_tmp;
+	m_tmp.convertTo( m_tmp , CV_64F);
+	mat2vec( cam , m_tmp );
+
+	fs["PROJ_PTS"] >>m_tmp;
+	m_tmp.convertTo( m_tmp , CV_64F);
+	mat2vec( proj , m_tmp );
+
+}
+
+void read_H( Mat &H , char *path )
+{
+	FileStorage fs( path , FileStorage::READ );
+	Mat m_tmp; 
+
+	fs["H"] >>m_tmp;
+	m_tmp.convertTo( H , CV_64F);
+
+}
+
+int main( int argc , char* argv[]){
+
+	vector< vector<Point3d> > proj_pts , cam_pts;
+
+	if(argc<4){
+		printf("Usage: %s <homog_wall_camera>.yml match_cam_proj_0.yml... match_cam_proj_1.yml...",
+				argv[0]);
+		exit(1);
+	}
+
+	Mat H;
+	read_H( H , argv[1] );
+	Mat Hwc = H.inv();
+
+	for(int i=2;i<argc;i++){
+		read_data( cam_pts , proj_pts , argv[i] );
+	}
+
+	VPC::Direct calibObj( cam_pts , proj_pts , Hwc); 
+        calibObj.calibrate(false);
+	cout<<"[Init Error]: \n\t"<< calibObj.rms()<<endl;
+        cout<<"[Bundle Adjustment]: \n\toptimizing ... "<< calibObj.nb_params() <<" parameters.\n";
+
+	calibObj.calibrate(true);
+	cout<<"[Final Error]: \n\t"<< calibObj.rms()<<endl;
+	cout<<"[Calib Matrix]:\n\t"<<calibObj.K<<endl;
+        for(int i=0;i<calibObj.nb_views();i++)
+        cout<<"Pose "<<i<<":\n"<<calibObj.R[i]<<endl<<calibObj.T[i]<<ndl<<endl;
+
+        return 0;
+}
+

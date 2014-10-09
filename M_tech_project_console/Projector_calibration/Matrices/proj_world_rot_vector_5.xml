@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_world_rot_vector_5 type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    -1.8268154049389657e-01 -2.7018656005447755e-01
+    2.0930527950955798e-03</data></proj_world_rot_vector_5>
+</opencv_storage>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<proj_cam_trans_vect type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    1.3302794536046338e+02 3.7905916309403835e+00
+    -2.8954430090180509e+01</data></proj_cam_trans_vect>
+</opencv_storage>

@@ -1,0 +1,18 @@
+This directory includes 3 examples of how to use the 
+main calibration routines. These examples all take in input
+YAML files that contains matching points camera <--> projectors
+and extra info (depending on the method). After reading the arguments, 
+the demo programs perform the calibration and applied a bundle adjustment
+optimization. Results are printed to stdout.
+
+For exact usage, run each demo with no parameters.
+
+**main_direct: This is the direct calibration demo. It requires
+			   a matching point wall<-->camera, these matches are
+			   obtained using a physical chessboard on the wall.
+**main_sampling: This is the sampling method. It needs the camera parameters
+				 (at least principal point).
+**main_autocalib: This is the autocalbration method. It requires matches of
+				  camera<-->projector in fronto-// configuration and of course
+				  matches in general positions.
+

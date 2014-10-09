@@ -1,0 +1,56 @@
+*AUTHOR: Jamil Draréni
+		 urbeller@gmail.com
+		 free-dee.org
+
+*Introduction:
+	This is vpc (video projector calibration) library. Coded in 
+	C++ and uses OpenCV (> 2.0), it provides 3 main routines to 
+	retrieve a video projector intrinsics. These routines are 
+	explained in the following publication:
+
+		Methods for Geometrical Video Projector Calibration.
+		J. Draréni, P.F. Sturm and S. Roy. In, 
+		Machine Vision and Applications Journal (MVA), 2012.
+
+*Requirement:
+	VPC is coded in C++. You will need:
+		** g++ (>=3.0)
+		** CMake (>=2.4)
+		** OpenCV (>=2.0)
+
+*Install:
+	The library is built using the CMake framework and it only
+	depends on the OpenCV library (mainly for matrix algebra and
+	homography computations). Suppose you are in the vpc directory
+	, the following is the recommended instructions sequence:
+
+		bash>mkdir build
+		bash>cd build
+		bash>cmake ..
+		bash>make
+
+	This will build the library (libvpc) in vpc/build/lib/ and
+	the examples main_direct/main_sampling/main_autocalib  in
+	vpc/build/examples/.
+
+	You can optionally install it where the flag 'prefix' points to
+	(default: /usr/local):
+		bash>make install
+
+*Content:
+	The package provides runtime libraries, headers, utilities and examples.
+
+	**Libraries: located in /lib subdir, these are the libraries you need to 
+	  			 link your programs with.
+	**Headers:	located in /include, contain the necessary headers but you will
+				only need to include "vpc.h"
+
+	**Utilities: They are located in /utils. So far, it contains a camera calibration
+				 program and a homography computation. Please, refer to the utils/README 
+				 for further details.
+	**examples: They are located in /examples, there is an example for each calibration
+				routine. Please refer to the example/README for further details.
+
+*DISCLAIMER: This software is for private and research uses. You may use, copy, reproduce, and
+			 distribute this Software and its algorithms for any non-commercial purpose. 
+

@@ -1,0 +1,6 @@
+/home/pranav/Desktop/Libraries/vpc-0.1/build/utils/CMakeFiles/calib_camera.dir
+/home/pranav/Desktop/Libraries/vpc-0.1/build/utils/CMakeFiles/get_homog.dir
+/home/pranav/Desktop/Libraries/vpc-0.1/build/examples/CMakeFiles/main_autocalib.dir
+/home/pranav/Desktop/Libraries/vpc-0.1/build/examples/CMakeFiles/main_direct.dir
+/home/pranav/Desktop/Libraries/vpc-0.1/build/examples/CMakeFiles/main_sampling.dir
+/home/pranav/Desktop/Libraries/vpc-0.1/build/src/CMakeFiles/vpc.dir

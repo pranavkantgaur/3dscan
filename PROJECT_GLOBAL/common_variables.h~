@@ -1,0 +1,67 @@
+#include "/home/pranav/Desktop/PROJECT_GLOBAL/global_cv.h"
+
+
+char filename[150];
+char tagname[50];
+int number_of_codes_vertical=24;//number of binary codes.
+int number_of_codes_horizontal=16;
+int number_of_patterns_binary_vertical=4;
+int number_of_patterns_binary_horizontal=4;
+int number_of_patterns_fringe=3;
+
+int code_vertical[Camera_imagewidth][Camera_imageheight];
+int code_horizontal[Camera_imagewidth][Camera_imageheight];
+
+int c_p_map[total_camera_pixels][2];
+
+int valid_map_vertical[Camera_imagewidth][Camera_imageheight];//for shadow & background removal.
+int valid_map_horizontal[Camera_imagewidth][Camera_imageheight];
+int valid_map[Camera_imagewidth][Camera_imageheight];//will contain the intersection of both above valid maps.
+
+int fringe_width_pixels_vertical=64;
+int fringe_width_pixels_horizontal=64;
+
+int Monitor_width_pixels=1280;
+
+int cam_gain=40;//Used for setting camera & projector brighness.
+int proj_gain=35;
+int cam_exp=150;//Used for setting camera exposure time(currently 1/1000000th of a second or 1us)
+CvCapture*camera;
+IplImage*cap;
+//Camera & projector matrices.
+CvMat*cam_intrinsic_mat;
+CvMat*cam_dist_vect;
+CvMat*cam_world_rot_vect;//relative rotation & translation vectors.
+CvMat*cam_world_trans_vect;
+CvMat*cam_world_rot_mat;
+
+
+
+CvMat*proj_intrinsic_mat;
+CvMat*proj_dist_vect;
+CvMat*proj_world_rot_vect;
+CvMat*proj_world_trans_vect;
+CvMat*proj_world_rot_mat;
+
+CvMat*proj_cam_rot_mat;
+CvMat*proj_cam_trans_vect;
+
+
+CvMat*proj_world_coordinates;
+
+float wrapped_phi_vertical[Camera_imagewidth][Camera_imageheight];
+float wrapped_phi_horizontal[Camera_imagewidth][Camera_imageheight];
+
+float unwrapped_phi_vertical[Camera_imagewidth][Camera_imageheight];
+float unwrapped_phi_horizontal[Camera_imagewidth][Camera_imageheight];
+
+double intersection_points[Camera_imagewidth][Camera_imageheight][3];//it will contain the coordinates of point of intersection for each camera pixel(origin will be Camera-coordinate-system origin)
+
+
+int fd_webcam;
+struct v4l2_control ctrl;
+
+int valid_camera_pixel[Projector_imagewidth][Projector_imageheight][2];
+bool assigned[Projector_imagewidth][Projector_imageheight];
+
+float gamma_value;
